@@ -7,7 +7,7 @@ from collections import defaultdict
 import numpy as np
 
 
-def calculate_metric_relation(gt, predict):
+def calculate_metric_relation(predict， gt):
   tp, fp, fn = 0, 0, 0
   for entity_predict, entity_gt in zip(predict, gt):
     # print(entity_predict, entity_gt)
