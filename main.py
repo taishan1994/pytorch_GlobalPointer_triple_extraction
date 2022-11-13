@@ -282,7 +282,7 @@ class BertForRe:
                     object.append(obj)
 
                     re1 = np.where(single_head_output[:, sh, oh].cpu().numpy() > 0)[0]
-                    re2 = np.where(single_head_output[:, sh, oh].cpu().numpy() > 0)[0]
+                    re2 = np.where(single_tail_output[:, sh, oh].cpu().numpy() > 0)[0]
                     res = set(re1) & set(re2)
                     for r in res:
                       spo.append((subj, self.id2tag[r], obj))
