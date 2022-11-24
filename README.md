@@ -15,7 +15,7 @@
 ```
 pytorch==1.6.0
 transformers==4.5.0
-tensorboadX
+tensorboardX
 ```
 
 **特别注意**：eval_steps要根据总的steps进行合理设置，不要设置得太小，否则在初期就进行验证会极慢（因为预测的负样本太多了）。
