@@ -15,6 +15,7 @@
 ```
 pytorch==1.6.0
 transformers==4.5.0
+tensorboadX
 ```
 
 # 运行
@@ -41,7 +42,7 @@ transformers==4.5.0
 --weight_decay=0.01 \
 --dropout_prob=0.1 \
 --use_tensorboard="False" \
---use_dev_num=1000 \
+--use_dev_num=1000
 ```
 
 ### 结果
