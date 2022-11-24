@@ -18,6 +18,7 @@ transformers==4.5.0
 tensorboadX
 ```
 
+**特别注意**：eval_steps要根据总的steps进行合理设置，不要设置得太小，否则在初期就进行验证会极慢（因为预测的负样本太多了）。
 # 运行
 
 ```python
@@ -34,7 +35,7 @@ tensorboadX
 --other_lr=5e-5 \
 --train_batch_size=32 \
 --train_epochs=1 \
---eval_steps=10 \
+--eval_steps=500 \
 --eval_batch_size=8 \
 --max_grad_norm=1 \
 --warmup_proportion=0.1 \
