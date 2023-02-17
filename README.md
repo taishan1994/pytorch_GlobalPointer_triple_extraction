@@ -22,7 +22,7 @@ tensorboardX
 # 运行
 
 ```python
-!python main.py \
+python main.py \
 --bert_dir="model_hub/chinese-bert-wwm-ext/" \
 --data_dir="./data/ske/" \
 --log_dir="./logs/" \
